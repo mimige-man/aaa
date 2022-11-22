@@ -120,14 +120,17 @@ def main():
         pred0 = round(prediction[0],3) * 100  # 猫の確率(%)
         pred1 = round(prediction[1],3) * 100  # 犬の確率(%)
         pred2 = round(prediction[2],3) * 100
+        pred3 = round(prediction[3],3) * 100
 
         # 推論で得られたクラス番号(初期値は0)によって出力結果を分岐
         if classNo == 0:
             st.subheader(f"これは{pred0}％の確率で「猫」です！")
         elif classNo == 1:
             st.subheader(f"これは{pred1}％の確率で「犬」です！")
-        else:
+        else classNo == 2:
             st.subheader(f"これは{pred2}％の確率で「アザラシ」です！")
+        else:
+            st.subheader(f"これは{pred3}％の確率で「キリン」です！")
 
 
 # mainの起動
