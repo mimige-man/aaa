@@ -127,7 +127,7 @@ def main():
             st.subheader(f"これは{pred0}％の確率で「猫」です！")
         elif classNo == 1:
             st.subheader(f"これは{pred1}％の確率で「犬」です！")
-        else classNo == 2:
+        elif classNo == 2:
             st.subheader(f"これは{pred2}％の確率で「アザラシ」です！")
         else:
             st.subheader(f"これは{pred3}％の確率で「キリン」です！")
